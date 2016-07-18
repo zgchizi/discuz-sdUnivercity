@@ -49,7 +49,7 @@ if(!defined('IN_UC')) {
 	parse_str(authcode($code, 'DECODE', UC_KEY), $get);
 
 	if(time() - $get['time'] > 3600) {
-		exit('Authracation has expiried');
+		exit('Authracation has expiried'.authcode($code, 'DECODE', UC_KEY));
 	}
 	if(empty($get)) {
 		exit('Invalid Request');

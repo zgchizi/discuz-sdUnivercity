@@ -17,6 +17,23 @@ $_CACHE['apps'] = array (
     'tagtemplates' => '',
     'allowips' => '',
   ),
+ 2 => 
+  array (
+    'appid' => '2',
+    'type' => 'DISCUZX',
+    'name' => 'Discuz! Board',
+    'url' => 'http://localhost:8181',
+    'ip' => '',
+    'viewprourl' => '',
+    'apifilename' => 'uc',
+    'charset' => '',
+    'dbcharset' => '',
+    'synlogin' => '1',
+    'recvnote' => '1',
+    'extra' => false,
+    'tagtemplates' => '',
+    'allowips' => '',
+  ),
 );
 
 ?>

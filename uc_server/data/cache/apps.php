@@ -7,15 +7,24 @@ $_CACHE['apps'] = array (
     'name' => 'Discuz! Board',
     'url' => 'http://localhost',
     'authkey' => '4364Ofz0ebI4vak4V1t7D5j4udYfMfw4K7P2sbBbR4A270q2149093PdPdDavdj0',
-    'ip' => '',
+    'ip' => '127.0.0.1',
     'viewprourl' => '',
     'apifilename' => 'uc.php',
     'charset' => '',
     'dbcharset' => '',
     'synlogin' => '1',
     'recvnote' => '1',
-    'extra' => '',
-    'tagtemplates' => '',
+    'extra' => 
+    array (
+      'apppath' => '',
+      'extraurl' => 
+      array (
+      ),
+    ),
+    'tagtemplates' => '<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="template"><![CDATA[]]></item>
+</root>',
     'allowips' => '',
   ),
   2 => 
@@ -25,7 +34,7 @@ $_CACHE['apps'] = array (
     'name' => 'oppia',
     'url' => 'http://localhost:8181',
     'authkey' => '4364Ofz0ebI4vak4V1t7D5j4udYfMfw4K7P2sbBbR4A270q2149093PdPdDavaj0',
-    'ip' => '',
+    'ip' => '127.0.0.1',
     'viewprourl' => '',
     'apifilename' => 'uc',
     'charset' => '',
