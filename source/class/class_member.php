@@ -256,7 +256,7 @@ class logging_ctl {
 				}
 				if(empty($_GET['handlekey']) || !empty($_GET['lssubmit'])) {
 					if(defined('IN_MOBILE')) {
-						showmessage($loginmessage, $location, $param, array('location' => true));
+						showmessage($loginmessage, $location, $param, array('location' => true,'extrajs'=>$ucsynlogin));
 					} else {
 						if(!empty($_GET['lssubmit'])) {
 							if(!$ucsynlogin) {

@@ -37,7 +37,7 @@ class usercontrol extends base {
 				foreach($this->cache['apps'] as $appid => $app) {
 					if($app['synlogin']) {
 						if($app['appid'] != $this->app['appid']) {
-							$synstr .= '<script type="text/javascript" src="'.$app['url'].'/api/'.$app['apifilename'].'?time='.$this->time.'&code='.urlencode($this->authcode('action=synlogin&username='.$this->user['username'].'&uid='.$this->user['uid'].'&password='.$this->user['password']."&time=".$this->time, 'ENCODE', $app['authkey'])).'" reload="1"></script>';
+							$synstr .= '<script type="text/javascript" src="'.$app['url'].'/api/'.$app['apifilename'].'?time='.$this->time.'&code='.urlencode($this->authcode('action=synlogin&username='.$this->user['username'].'&uid='.$this->user['uid'].'&password='.$this->user['password']."&email=".$this->user['email']."&time=".$this->time, 'ENCODE', $app['authkey'])).'" reload="1"></script>';
 						}
 						if(is_array($app['extra']['extraurl'])) foreach($app['extra']['extraurl'] as $extraurl) {
 							$synstr .= '<script type="text/javascript" src="'.$extraurl.'/api/'.$app['apifilename'].'?time='.$this->time.'&code='.urlencode($this->authcode('action=synlogin&username='.$this->user['username'].'&uid='.$this->user['uid'].'&password='.$this->user['password']."&time=".$this->time, 'ENCODE', $app['authkey'])).'" reload="1"></script>';
